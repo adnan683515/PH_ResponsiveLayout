@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+nav >div{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+}
+
+
+body {
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+
+}
+
+.card-container {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    gap: 10px 10px;
+}
+
+.card {
+
+    margin-bottom: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.flower_container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.flower_container>div {
+    flex: 1;
+}
+
+.two_flowers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.two_flowers {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.two_flowers img {
+    width: 50%;
+
+
+}
+
+
+.four_flowers {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+
+.four_flowers img {
+    width: 100%;
+}
+
+
+.logo{
+    height: 10vh;
+}
+header {
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(93, 92, 92), rgba(86, 86, 86, 0)), url("images/burger.jpg");
+}
+
+@media screen and (max-width: 576px) {
+
+
+    .card-container {
+        grid-template-columns: repeat(1, 3fr);
+
+
+    }
+
+
+    .flower_container,nav {
+        flex-direction: column;
+    }
+    nav{
+        gap: 20px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+    .four_flowers{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+
+
+    }
+
+    header {
+        height: 40vh;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width:992px) {
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+}
